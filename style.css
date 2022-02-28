@@ -1,0 +1,75 @@
+
+  .grid {
+    display: grid;
+   grid-template-columns: auto auto auto;
+   /* grid-template-rows: 100px 200px; */
+   grid-gap: 10px;
+   /* grid-column-gap: 10px;
+   grid-row-gap: 10px; */
+   grid-template-areas: 
+   'header header header'
+    'sidebar section section'
+    'sidebar section section'
+    'footer footer footer';
+   
+  }
+
+  .grid-item {
+    height: 100px;
+    background-color: cadetblue;
+    /* margin: 10px; */
+  }
+  
+
+
+  /* gap - grid ის margin ია */
+  /* row - მწკრივი
+  columnt - სვეტი */
+
+
+
+  .item-1{
+      grid-area: 'header';
+  }
+
+  .item-2{
+    grid-area: 'header';
+}
+
+.item-3{
+    grid-area: 'header';
+}
+
+
+.item-4 {
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-area: sidebar;
+  }
+  .item-5 {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: section;
+  }
+  .item-6 {
+    grid-area: section;
+  }
+  .item-7 {
+    grid-area: sidebar;
+  }
+  .item-8 {
+    grid-area: section;
+  }
+  .item-9 {
+    grid-area: section;
+  }
+  .item-10 {
+    grid-area: footer;
+  }
+  .item-11 {
+    grid-area: footer;
+  }
+  .item-12 {
+    grid-area: footer;
+  }
+  
